@@ -1,0 +1,11 @@
+<p>Project id - {{id}}</p>
+<p>Project Name - {{projectName}}</p>
+<hr>
+<p>Employees in this project:</p>
+<ol>
+    {{#each results}}
+        <li>
+               {{this.fullName}} ({{this.employeeId}})
+        </li>
+    {{/each}}
+</ol>
